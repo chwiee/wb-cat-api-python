@@ -201,13 +201,13 @@ def hat():
 		cursor = conn.cursor(pymysql.cursors.DictCursor)
 		cursor.execute("SELECT * FROM cats WHERE id_api LIKE %s", "%hat%")
 		empRow = cursor.fetchall()
-		respone = jsonify(empRows)
+		respone = jsonify(empRow)
 		#get end time execution
 		end = time.time() - start
 		#format output timestamp
 		timestamp = get_current_timestamp_formated()
 		#send data to audit elastic
-		audit_es(respone.status_code, 'GET', empRows, end, timestamp)
+		audit_es(respone.status_code, 'GET', empRow, end, timestamp)
 		return respone
 	except Exception as e:
 		print(e)
@@ -232,7 +232,7 @@ def glasses():
 		#format output timestamp
 		timestamp = get_current_timestamp_formated()
 		#send data to audit elastic
-		audit_es(respone.status_code, 'GET', empRows, end, timestamp)
+		audit_es(respone.status_code, 'GET', empRow, end, timestamp)
 		return respone
 	except Exception as e:
 		print(e)

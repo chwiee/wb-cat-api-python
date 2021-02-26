@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "f09b8f85-7449-4731-ad8e-134013df419e",
+		"name": "wb-cat-api2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Breeds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "All Breeds",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{breeds}}",
+							"host": [
+								"{{url}}{{breeds}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "366"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:56:40 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"description\": \"Native to the Greek islands known as the\",\n    \"id\": 1,\n    \"id_api\": \"aege\",\n    \"img_url1\": \"https://cdn2.thecatapi.com/images/h19-vtIeX.jpg\",\n    \"img_url2\": \"https://cdn2.thecatapi.com/images/ks5wRxZmP.jpg\",\n    \"img_url3\": \"https://cdn2.thecatapi.com/images/uvt2Psd9O.jpg\",\n    \"name\": \"Aegean\",\n    \"origin\": \"Greece\",\n    \"temperament\": \"Affectionate, Social, Intelligent, Playful, Active\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Specify Breeds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "Specify Breeds",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{breeds}}/{{breed-name\n}}",
+							"host": [
+								"{{url}}{{breeds}}"
+							],
+							"path": [
+								"{{breed-name\n}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "366"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:56:59 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"description\": \"Native to the Greek islands known as the\",\n    \"id\": 1,\n    \"id_api\": \"aege\",\n    \"img_url1\": \"https://cdn2.thecatapi.com/images/h19-vtIeX.jpg\",\n    \"img_url2\": \"https://cdn2.thecatapi.com/images/ks5wRxZmP.jpg\",\n    \"img_url3\": \"https://cdn2.thecatapi.com/images/uvt2Psd9O.jpg\",\n    \"name\": \"Aegean\",\n    \"origin\": \"Greece\",\n    \"temperament\": \"Affectionate, Social, Intelligent, Playful, Active\"\n}"
+				}
+			]
+		},
+		{
+			"name": "All Origin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "All Origin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{origin}}",
+							"host": [
+								"{{url}}{{origin}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1645"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:57:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"origin\": \"Greece\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United Arab Emirates\"\n    },\n    {\n        \"origin\": \"Australia\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"France\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"Burma\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"France\"\n    },\n    {\n        \"origin\": \"Egypt\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"Canada\"\n    },\n    {\n        \"origin\": \"Cyprus\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"Russia\"\n    },\n    {\n        \"origin\": \"China\"\n    },\n    {\n        \"origin\": \"Egypt\"\n    },\n    {\n        \"origin\": \"Burma\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Japan\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Thailand\"\n    },\n    {\n        \"origin\": \"Thailand\"\n    },\n    {\n        \"origin\": \"Russia\"\n    },\n    {\n        \"origin\": \"Thailand\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"Isle of Man\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Norway\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Iran (Persia)\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Russia\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"United Kingdom\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Thailand\"\n    },\n    {\n        \"origin\": \"Russia\"\n    },\n    {\n        \"origin\": \"Singapore\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Somalia\"\n    },\n    {\n        \"origin\": \"Canada\"\n    },\n    {\n        \"origin\": \"Canada\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"Turkey\"\n    },\n    {\n        \"origin\": \"Turkey\"\n    },\n    {\n        \"origin\": \"United States\"\n    },\n    {\n        \"origin\": \"\"\n    },\n    {\n        \"origin\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Specify Origin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "Specify Origin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{origin}}/{{origin-name}}",
+							"host": [
+								"{{url}}{{origin}}"
+							],
+							"path": [
+								"{{origin-name}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:57:36 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Aegean\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "All temperament",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "All temperament",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{temperament}}",
+							"host": [
+								"{{url}}{{temperament}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4728"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:57:52 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"temperament\": \"Affectionate, Social, Intelligent, Playful, Active\"\n    },\n    {\n        \"temperament\": \"Intelligent, Interactive, Lively, Playful, Sensitive\"\n    },\n    {\n        \"temperament\": \"Affectionate, Curious, Intelligent, Interactive, Lively, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Active, Curious, Easy Going, Playful, Calm\"\n    },\n    {\n        \"temperament\": \"Affectionate, Curious, Gentle, Intelligent, Interactive, Lively, Loyal, Playful, Sensible, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Agile, Curious, Independent, Playful, Loyal\"\n    },\n    {\n        \"temperament\": \"Lively, Social, Fun-loving, Relaxed, Affectionate\"\n    },\n    {\n        \"temperament\": \"Affectionate, Intelligent, Playful\"\n    },\n    {\n        \"temperament\": \"Affectionate, Lively, Friendly, Intelligent\"\n    },\n    {\n        \"temperament\": \"Alert, Agile, Energetic, Demanding, Intelligent\"\n    },\n    {\n        \"temperament\": \"Affectionate, Active, Gentle, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Dependent, Gentle, Intelligent, Playful\"\n    },\n    {\n        \"temperament\": \"Affectionate, Easy Going, Independent, Intelligent, Loyal, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Easy Going, Gentle, Loyal, Patient, calm\"\n    },\n    {\n        \"temperament\": \"Curious, Intelligent, Gentle, Social, Interactive, Playful, Lively\"\n    },\n    {\n        \"temperament\": \"Easy Going, Friendly, Intelligent, Lively, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Curious, Intelligent, Loyal, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Demanding, Interactive, Loyal\"\n    },\n    {\n        \"temperament\": \"Affectionate, Loyal, Intelligent, Social, Lively, Playful\"\n    },\n    {\n        \"temperament\": \"Affectionate, Intelligent, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Gentle, Intelligent, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Intelligent, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Affectionate, Intelligent, Active, Curious, Playful\"\n    },\n    {\n        \"temperament\": \"Gentle, Loyal, Intelligent, Playful\"\n    },\n    {\n        \"temperament\": \"Affectionate, Social\"\n    },\n    {\n        \"temperament\": \"Highly interactive, Mischievous, Loyal, Social, Playful\"\n    },\n    {\n        \"temperament\": \"Playful, affectionate, loyal, social\"\n    },\n    {\n        \"temperament\": \"Intelligent, Friendly, Gentle, Loving, Loyal\"\n    },\n    {\n        \"temperament\": \"Agile, Dependent, Gentle, Intelligent, Lively, Loyal, Playful\"\n    },\n    {\n        \"temperament\": \"Sweet, Affectionate, Loyal\"\n    },\n    {\n        \"temperament\": \"Affectionate, Sweet, Loyal, Quiet, Peaceful\"\n    },\n    {\n        \"temperament\": \"Affectionate, Curious, Demanding, Friendly, Intelligent, Playful\"\n    },\n    {\n        \"temperament\": \"Dependent, Gentle, Intelligent, Quiet, Social\"\n    },\n    {\n        \"temperament\": \"Active, Agile, Clever, Easy Going, Intelligent, Lively, Loyal, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Active, Devoted, Intelligent, Playful\"\n    },\n    {\n        \"temperament\": \"Calm, Relaxed, Talkative, Playful, Warm\"\n    },\n    {\n        \"temperament\": \"Active, Loyal, highly intelligent, Expressive, Trainable\"\n    },\n    {\n        \"temperament\": \"Independent, highly intelligent, clever, inquisitive, sociable, playful, trainable\"\n    },\n    {\n        \"temperament\": \"Affectionate, Friendly, Gentle, Intelligent, Playful, Quiet\"\n    },\n    {\n        \"temperament\": \"Adaptable, Intelligent, Loving, Gentle, Independent\"\n    },\n    {\n        \"temperament\": \"Affectionate, Interactive, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Easy Going, Intelligent, Loyal, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Agile, Easy Going, Intelligent, Playful\"\n    },\n    {\n        \"temperament\": \"Gentle, Quiet, Shy, Playful\"\n    },\n    {\n        \"temperament\": \"Sweet, Active, Intelligent, Social, Playful, Lively, Curious\"\n    },\n    {\n        \"temperament\": \"Active, Agile, Curious, Demanding, Friendly, Gentle, Lively, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Energetic, Affectionate, Intelligent, Social, Playful, Curious\"\n    },\n    {\n        \"temperament\": \"Affectionate, loyal, Sedate, Quiet\"\n    },\n    {\n        \"temperament\": \"Affectionate, Social, Intelligent, Loyal\"\n    },\n    {\n        \"temperament\": \"Affectionate, Friendly, Gentle, Calm\"\n    },\n    {\n        \"temperament\": \"Affectionate, Friendly, Gentle, Quiet, Easygoing\"\n    },\n    {\n        \"temperament\": \"Active, Dependent, Easy Going, Gentle, Intelligent, Loyal, Playful, Quiet\"\n    },\n    {\n        \"temperament\": \"Curious, Social, Intelligent, Loyal, Outgoing, Adventurous, Affectionate\"\n    },\n    {\n        \"temperament\": \"Affectionate, Intelligent, Loyal, Playful, Social, Sweet, Loving\"\n    },\n    {\n        \"temperament\": \"Active, Affectionate, Dependent, Gentle, Patient, Playful, Quiet, Social\"\n    },\n    {\n        \"temperament\": \"Active, Agile, Clever, Sociable, Loving, Energetic\"\n    },\n    {\n        \"temperament\": \"Curious, Intelligent, Loyal, Sweet, Agile, Playful, Affectionate\"\n    },\n    {\n        \"temperament\": \"Affectionate, Curious, Easy Going, Intelligent, Interactive, Lively, Loyal\"\n    },\n    {\n        \"temperament\": \"Affectionate, Social, Intelligent, Sweet-tempered\"\n    },\n    {\n        \"temperament\": \"Mischievous, Tenacious, Intelligent, Affectionate, Gentle, Interactive, Loyal\"\n    },\n    {\n        \"temperament\": \"Loyal, Inquisitive, Friendly, Quiet, Gentle\"\n    },\n    {\n        \"temperament\": \"Curious, Intelligent, Social, Lively, Outgoing, Playful, Affectionate\"\n    },\n    {\n        \"temperament\": \"Playful, Social, Intelligent\"\n    },\n    {\n        \"temperament\": \"Affectionate, Agile, Clever, Gentle, Intelligent, Playful, Social\"\n    },\n    {\n        \"temperament\": \"Agile, Intelligent, Loyal, Playful, Energetic\"\n    },\n    {\n        \"temperament\": \"Playful, Social, Intelligent, Curious, Friendly\"\n    },\n    {\n        \"temperament\": \"\"\n    },\n    {\n        \"temperament\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Specify temperament",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "Specify temperament",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}{{temperament}}/{{temperament-name}}",
+							"host": [
+								"{{url}}{{temperament}}"
+							],
+							"path": [
+								"{{temperament-name}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "879"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:58:10 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Aegean\"\n    },\n    {\n        \"name\": \"American Curl\"\n    },\n    {\n        \"name\": \"American Wirehair\"\n    },\n    {\n        \"name\": \"Arabian Mau\"\n    },\n    {\n        \"name\": \"Australian Mist\"\n    },\n    {\n        \"name\": \"Balinese\"\n    },\n    {\n        \"name\": \"Bambino\"\n    },\n    {\n        \"name\": \"Birman\"\n    },\n    {\n        \"name\": \"Bombay\"\n    },\n    {\n        \"name\": \"British Longhair\"\n    },\n    {\n        \"name\": \"British Shorthair\"\n    },\n    {\n        \"name\": \"California Spangled\"\n    },\n    {\n        \"name\": \"Chantilly-Tiffany\"\n    },\n    {\n        \"name\": \"Chartreux\"\n    },\n    {\n        \"name\": \"Chausie\"\n    },\n    {\n        \"name\": \"Cheetoh\"\n    },\n    {\n        \"name\": \"Colorpoint Shorthair\"\n    },\n    {\n        \"name\": \"Cornish Rex\"\n    },\n    {\n        \"name\": \"Cyprus\"\n    },\n    {\n        \"name\": \"Donskoy\"\n    },\n    {\n        \"name\": \"European Burmese\"\n    },\n    {\n        \"name\": \"Exotic Shorthair\"\n    },\n    {\n        \"name\": \"Havana Brown\"\n    },\n    {\n        \"name\": \"LaPerm\"\n    },\n    {\n        \"name\": \"Malayan\"\n    },\n    {\n        \"name\": \"Oriental\"\n    },\n    {\n        \"name\": \"Persian\"\n    },\n    {\n        \"name\": \"Pixie-bob\"\n    },\n    {\n        \"name\": \"Ragamuffin\"\n    },\n    {\n        \"name\": \"Ragdoll\"\n    },\n    {\n        \"name\": \"Savannah\"\n    },\n    {\n        \"name\": \"Scottish Fold\"\n    },\n    {\n        \"name\": \"Selkirk Rex\"\n    },\n    {\n        \"name\": \"Siberian\"\n    },\n    {\n        \"name\": \"Singapura\"\n    },\n    {\n        \"name\": \"Snowshoe\"\n    },\n    {\n        \"name\": \"Somali\"\n    },\n    {\n        \"name\": \"Tonkinese\"\n    },\n    {\n        \"name\": \"Turkish Angora\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Hat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "Hat",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/hat",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"hat"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "249"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:58:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"description\": \"\",\n        \"id\": 67,\n        \"id_api\": \"hats\",\n        \"img_url1\": \"https://cdn2.thecatapi.com/images/35p.jpg\",\n        \"img_url2\": \"https://cdn2.thecatapi.com/images/3ar.jpg\",\n        \"img_url3\": \"https://cdn2.thecatapi.com/images/7hl.jpg\",\n        \"name\": \"\",\n        \"origin\": \"\",\n        \"temperament\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Glasses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "Glasses",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/glasses",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"glasses"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/1.0.1 Python/3.5.10"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Feb 2021 14:58:37 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"description\": \"\",\n        \"id\": 68,\n        \"id_api\": \"sunglasses\",\n        \"img_url1\": \"https://cdn2.thecatapi.com/images/a2.jpg\",\n        \"img_url2\": \"https://cdn2.thecatapi.com/images/a5.jpg\",\n        \"img_url3\": \"https://cdn2.thecatapi.com/images/15m.jpg\",\n        \"name\": \"\",\n        \"origin\": \"\",\n        \"temperament\": \"\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "0.0.0.0:5000\n"
+		},
+		{
+			"key": "breeds",
+			"value": "/breeds"
+		},
+		{
+			"key": "origin",
+			"value": "/origin"
+		},
+		{
+			"key": "temperament",
+			"value": "/temperament"
+		},
+		{
+			"key": "breed-name\n",
+			"value": "/Aegean"
+		},
+		{
+			"key": "origin-name",
+			"value": "/greece"
+		},
+		{
+			"key": "temperament-name",
+			"value": "/Affectionate"
+		}
+	]
+}
