@@ -1,0 +1,65 @@
+version: "3"
+
+services:
+
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    restart: unless-stopped
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    networks:
+      - WB
+  
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.2
+    container_name: kibana
+    restart: unless-stopped
+    ports:
+      - "5601:5601"
+    environment:
+      - SERVER_NAME=kibana.local
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    networks:
+      - WB
+
+  db-cats:
+    container_name: db-cats
+    image: chwiee/db-cat:latest
+    ports:
+      - "3306:3306"
+    networks:
+      - WB
+
+  populate-app:
+    container_name: populate-app
+    image: chwiee/populate-app:latest
+    networks:
+      - WB
+    depends_on: 
+      - db-cats
+
+  webapp:
+    container_name: webapp
+    image: chwiee/webapp:latest
+    ports:
+      - "5000:5000"
+    depends_on:
+      - elasticsearch
+    networks:
+      - WB
+
+networks:
+    WB:
+      external: true
+  
